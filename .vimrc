@@ -41,8 +41,6 @@ nmap <C-F>  li
 nmap <C-P>	ki
 nmap <C-N>	ji
 
-
-
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
