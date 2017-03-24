@@ -36,10 +36,10 @@ imap <C-A>  <Home>
 imap <C-E>  <End>
 imap <C-V>  <Esc>o
 imap <C-D>  <DEL>
-nmap <C-B>  h
-nmap <C-F>  l
-nmap <C-P>	k
-nmap <C-N>	j
+nmap <C-B>  hi
+nmap <C-F>  li
+nmap <C-P>	ki
+nmap <C-N>	ji
 
 
 
