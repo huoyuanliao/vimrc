@@ -13,20 +13,23 @@ set ts=2
 
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'racer-rust/vim-racer'
 Plugin 'rust-lang/rust.vim'
+Bundle 'Valloric/YouCompleteMe'
 call vundle#end()
 call pathogen#infect()
 syntax on
 filetype plugin indent on
 filetype on
 
-let g:rustfmt_autosave = 1
+"let g:rustfmt_autosave = 1
 set hidden
-let g:racer_cmd = "~/.cargo/bin/racer"
+let g:ycm_rust_src_path = '/home/liaozy/.cargo/rust-master/src'
+let g:racer_cmd = "/home/liaozy/.cargo/bin/racer"
+nnoremap <C-]> :YcmCompleter GoTo<CR>
 
 imap <C-P>  <Esc>lki
 imap <C-N>  <Esc>lji
